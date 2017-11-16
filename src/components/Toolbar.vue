@@ -1,6 +1,7 @@
 <template>
   <div class="chorin-toolbar">
-    <button class="float-right"><img src="../assets/ic_menu_black_24px.svg"></button>
+    <button @click="switchStein(1)" class="float-right">Stein weiter</button>
+    <button @click="switchStein(-1)" class="float-right">Stein zurück</button>
   </div>
 </template>
 
@@ -12,6 +13,11 @@ export default {
 
     };
   },
+  methods: {
+    switchStein(richtung) {
+      this.$store.dispatch('switchStein', richtung);
+    },
+  },
 };
 </script>
 
@@ -22,5 +28,6 @@ export default {
     width: 100%;
     background: #444;
     padding: .4rem;
+    margin-bottom: .4rem;
   }
 </style>

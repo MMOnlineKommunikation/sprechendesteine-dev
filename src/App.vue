@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <app-toolbar/>
     <router-view/>
   </div>
 </template>
 
 <script>
-import AppToolbar from '@/components/Toolbar';
+import { mapGetters } from 'vuex';
 
 export default {
   name: 'app',
-  components: {
-    'app-toolbar': AppToolbar,
+  computed: {
+    ...mapGetters([
+
+    ]),
   },
 };
 </script>

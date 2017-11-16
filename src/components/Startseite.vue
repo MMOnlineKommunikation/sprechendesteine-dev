@@ -3,8 +3,7 @@
     <p>Startseite ...</p>
     <input
     <hr>
-    <button type="button" class="btn btn-primary">Primary</button>
-  </div>
+    </div>
 </template>
 
 <script>
